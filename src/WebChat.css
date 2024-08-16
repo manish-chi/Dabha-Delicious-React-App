@@ -1,0 +1,26 @@
+.web-chat {
+  overflow: hidden;
+}
+
+.connect-spinner {
+  display: flex;
+  margin: auto;
+  text-align: center;
+}
+
+.connect-spinner > .content {
+  margin: auto;
+}
+
+.connect-spinner > .content > .icon {
+  font-size: 64px;
+}
+
+.ac-pushButton.style-default.ac-selectable.button-dev{
+  background-color: White;
+  color: #f0670c;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: 600;
+  padding: 10px;
+}

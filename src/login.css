@@ -1,0 +1,20 @@
+.login-page{
+  background-image: url('../public/dd-background-new.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw; /* Full height to cover the entire viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.span-forgotpassword{
+    padding: 0 0 0 160px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 10;
+    font-style: normal;
+}
+

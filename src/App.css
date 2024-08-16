@@ -1,0 +1,50 @@
+.App > img {
+  width: 100%;
+}
+
+body {
+  background-image: url('../public/dd-background-new.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw; /* Full height to cover the entire viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ac-pushButton style-default ac-selectable{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: White;
+  color: chartreuse;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.ac-pushButton {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: White;
+  color: chartreuse;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.wc-card button {
+  background-color: green;
+  color: #f0670c;
+  min-height: 32px;
+  width: 100%;
+  padding: 0 16px;
+}
+

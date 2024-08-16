@@ -1,0 +1,47 @@
+.home-page{
+    background-color: blue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 100vw; /* Full height to cover the entire viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../public/dd-background-new.jpg');
+    z-index: 1;
+    text-align: center;
+    margin: 20px;
+ }
+
+ .image-title-container {
+    text-align: center; /* Center align text and image */
+    margin: 20px; /* Add some margin around the container */
+    border:none;
+    outline: none;
+  }
+
+
+ .title-icon{
+    background-image: url('../public/dd-icon.png');
+    border: none;
+    outline: none;
+    align-content: center;
+    width: 250px; /* Set the width of the image */
+    height: 250px; /* Set the height of the image */
+    object-fit: cover;
+    border:none;
+    outline: none;
+}
+
+#main-title{
+    font-size: 90px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin-top: 10px;
+    align-content: center;
+}
+
+

@@ -62,7 +62,7 @@ function Login() {
         },
         body: JSON.stringify(loginInfo),
       });
-      if (response.status == 200) {
+      if (response.status === 200) {
         let record = await response.json();
         console.log(record.data.user._id);
         loginInfo.name = record.data.user.name;

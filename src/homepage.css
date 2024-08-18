@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../public/dd-background-new.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../src/dd-background-new.jpg');
     z-index: 1;
     text-align: center;
     margin: 20px;
@@ -23,7 +23,7 @@
 
 
  .title-icon{
-    background-image: url('../public/dd-icon.png');
+    background-image: url('./dd-icon.png');
     border: none;
     outline: none;
     align-content: center;

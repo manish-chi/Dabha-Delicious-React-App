@@ -1,5 +1,6 @@
 import MinimizableWebChat from "../MinimizableWebChat";
 import { useLocation } from 'react-router-dom';
+import React, { Component }  from 'react';
 
 
 function Main() {

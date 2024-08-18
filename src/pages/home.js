@@ -3,7 +3,6 @@ import { ToastContainer } from "react-toastify";
 import { Link } from "react-router-dom";
 import { handleError } from "../utils";
 import "../homepage.css";
-import Header from "./nav";
 
 function HomePage() {
   const [loginInfo, setloginInfo] = useState({

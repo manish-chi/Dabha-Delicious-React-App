@@ -2,7 +2,7 @@
   "name": "sample-customization-minimizable-web-chat",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://purple-ground-0e21d410f.5.azurestaticapps.net/login",
+  "homepage": "https://purple-ground-0e21d410f.5.azurestaticapps.net/",
   "dependencies": {
     "botframework-webchat": "^4.18.0",
     "classnames": "^2.5.1",

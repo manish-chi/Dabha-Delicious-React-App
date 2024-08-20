@@ -54,7 +54,7 @@ function Login() {
     }
 
     try {
-      const url = `${process.env.DHABA_DELICIOUS_BACKEND_URL}/api/v1/users/login`;
+      const url = `${process.env.REACT_APP_DHABA_DELICIOUS_LOGIN_URL}/api/v1/users/login`;
       const response = await fetch(url, {
         method: "POST",
         headers: {

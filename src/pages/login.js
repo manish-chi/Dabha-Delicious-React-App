@@ -35,9 +35,7 @@ function Login() {
     function success(position) {
       const latitude = position.coords.latitude;
       const longitude = position.coords.longitude;
-      console.log("Hey are we winning!");
       setLocation({ latitude, longitude });
-      console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
     }
 
     function error() {

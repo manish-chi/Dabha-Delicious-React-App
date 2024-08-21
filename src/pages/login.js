@@ -55,6 +55,7 @@ function Login() {
       const url = `${process.env.REACT_APP_DHABA_DELICIOUS_LOGIN_URL}/api/v1/users/login`;
       const response = await fetch(url, {
         method: "POST",
+        mode: 'no-cors',
         headers: {
           "Content-Type": "application/json",
         },

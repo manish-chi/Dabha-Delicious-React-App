@@ -9,7 +9,7 @@ function Login() {
   const [loginInfo, setloginInfo] = useState({
     email: "",
     password: "",
-    phoneNumber :""
+    phoneNumber: "",
   });
 
   const [location, setLocation] = useState(null);
@@ -51,29 +51,31 @@ function Login() {
       return handleError("email,password are required!");
     }
 
-    try {
-      const url = `${process.env.REACT_APP_DHABA_DELICIOUS_LOGIN_URL}/api/v1/users/login`;
-      const response = await fetch(url, {
+      const url = `/api/v1/users/login`;
+      fetch(url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(loginInfo),
-      });
-      if (response.status === 200) {
-        let record = await response.json();
-        console.log(record.data.user._id);
-        loginInfo.name = record.data.user.name;
-        loginInfo.userId = record.data.user._id;
-        loginInfo.location = location;
-        navigate("/main", { state: { data: loginInfo } });
-      } else {
-        handleError("Invalid email id or password! Please try again!");
+      })
+        .then((response) => {
+          if(response.status === 200){
+              return response.json();
+          }
+          else{
+            handleError("Invalid email id or password! Please try again!");
+          }
+        })
+        .then((record) => {
+          loginInfo.name = record.data.user.name;
+          loginInfo.userId = record.data.user._id;
+          loginInfo.location = location;
+          navigate("/main", { state: { data: loginInfo } });
+        }).catch (err => {
+            handleError(err);
+       });
       }
-    } catch (err) {
-      handleError(err);
-    }
-  };
 
   return (
     <div className="login-page">

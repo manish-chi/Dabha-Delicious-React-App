@@ -26,6 +26,7 @@ const MinimizableWebChat = (loginInfo) => {
                   location: loginInfo.value.location,
                   phoneNumber : loginInfo.value.phoneNumber,
                   userId : loginInfo.value.userId,
+                  token : loginInfo.value.token,
                 },
               },
             },
@@ -273,9 +274,8 @@ const MinimizableWebChat = (loginInfo) => {
 
   const handleFetchToken = useCallback(async () => {
     if (!token) {
-      //  const res = await fetch('https://dabadeliciousapp.azurewebsites.net/directline/token', { method: 'POST' });
-      //  let { token } = await res.json();
-      let token = "qOonFjBjTss.VXllym7_IRdqsrXWBr3xG5gaM4zbUoJF2sx2HAHEaaA";
+      const res = await fetch(`/config/${loginInfo.value.userId}`, { method: 'GET' });
+      let { token } = await res.json();
       setToken(token);
     }
   }, [setToken, token]);
